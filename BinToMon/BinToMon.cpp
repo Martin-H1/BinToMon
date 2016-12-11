@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 		start_addr = b;
 		fread(&b, 1, 1, obj);
 		start_addr |= b << 8;
-		fread(&length, 1, 2, obj);
+		//fread(&length, 1, 2, obj);
 		printf("%04X:", start_addr);
 		while (fread(&b, 1, 1, obj) == 1)
 		{
